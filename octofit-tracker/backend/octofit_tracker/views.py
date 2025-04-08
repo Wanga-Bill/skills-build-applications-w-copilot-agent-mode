@@ -6,7 +6,7 @@ from .serializers import UserSerializer, TeamSerializer, ActivitySerializer, Lea
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    codespace_url = "https://[REPLACE-THIS-WITH-YOUR-CODESPACE-NAME]-8000.app.github.dev"
+    codespace_url = "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev"
     return Response({
         'users': f'{codespace_url}/api/users/',
         'teams': f'{codespace_url}/api/teams/',
