@@ -1,23 +1,28 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
-
-
     {
-      "name": "Launch Django Backend",
+      "name": "Python: Django",
       "type": "python",
       "request": "launch",
       "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
-      "args": ["runserver", "0.0.0.0:8000"],
+      "args": ["runserver"],
       "django": true,
-      "justMyCode": true,
-      "python": "${workspaceFolder}/octofit-tracker/backend/venv/bin/python",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}/octofit-tracker/backend/venv/lib/python3.8/site-packages",
-        "VIRTUAL_ENV": "${workspaceFolder}/octofit-tracker/backend/venv",
-        "PATH": "${workspaceFolder}/octofit-tracker/backend/venv/bin:${env:PATH}"
+        "users": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/users/",
+        "teams": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/teams/",
+        "activity": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/activity/",
+        "leaderboard": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/leaderboard/",
+        "workouts": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/workouts/"
       }
+    },
+    {
+      "name": "Python: Test",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/octofit-tracker/backend/manage.py",
+      "args": ["test"],
+      "django": true
     }
   ]
 }

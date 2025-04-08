@@ -143,3 +143,12 @@ CORS_ALLOW_HEADERS = [
     "content-type",
     "authorization",
 ]
+
+# API Endpoints Configuration
+API_ENDPOINTS = {
+    "users": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/users/",
+    "teams": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/teams/",
+    "activity": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/activity/",
+    "leaderboard": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/leaderboard/",
+    "workouts": "https://expert-yodel-rp557jwv6pxc5pw7-8000.app.github.dev/api/workouts/"
+}
